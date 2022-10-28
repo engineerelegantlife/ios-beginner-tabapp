@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xbQ-Ub-yfV">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--晴れ-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TabApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.6588235294117647" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="晴れ" image="sun.min.fill" catalog="system" id="xbH-mx-aEu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840" y="4"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="XGX-1b-GhC">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="xbQ-Ub-yfV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HU5-HQ-MgX">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ABd-EH-WkD"/>
+                        <segue destination="UEK-9a-6hL" kind="relationship" relationship="viewControllers" id="xOc-H1-R41"/>
+                        <segue destination="6kS-P8-DNJ" kind="relationship" relationship="viewControllers" id="BK3-q6-fTY"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nw6-bg-Whk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.538461538461537" y="3.5545023696682461"/>
+        </scene>
+        <!--雨-->
+        <scene sceneID="GUC-Us-o7W">
+            <objects>
+                <viewController id="UEK-9a-6hL" customClass="ViewController" customModule="TabApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dEQ-sg-jt6">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ZY5-Ll-1As"/>
+                        <color key="backgroundColor" red="0.61176470588235299" green="0.81960784313725488" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="雨" image="cloud.rain.fill" catalog="system" id="Rvd-6Y-h3M"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W6O-fa-he9" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1589" y="4"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Mqb-Dq-213">
+            <objects>
+                <viewController id="4aV-QF-63H" customClass="ViewController" customModule="TabApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zpM-Xv-PXp">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gY-oc-NEP">
+                                <rect key="frame" x="139.66666666666666" y="404.66666666666669" width="111" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="詳細をみる"/>
+                                <connections>
+                                    <segue destination="xt2-fh-lhB" kind="show" id="RsG-fr-YT0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="u36-WX-dMs"/>
+                        <color key="backgroundColor" red="0.5490196078431373" green="0.84705882352941175" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6gY-oc-NEP" firstAttribute="centerX" secondItem="zpM-Xv-PXp" secondAttribute="centerX" id="9ZN-0X-rsY"/>
+                            <constraint firstItem="6gY-oc-NEP" firstAttribute="centerY" secondItem="zpM-Xv-PXp" secondAttribute="centerY" id="H8E-f6-P0t"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Uh6-IP-qN3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2gL-mX-siG" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3269.2307692307691" y="3.5545023696682461"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yMS-Kh-boT">
+            <objects>
+                <viewController id="xt2-fh-lhB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8sU-lq-v1c">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="詳細画面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3x-2f-2cC">
+                                <rect key="frame" x="160.33333333333334" y="412" width="69.333333333333343" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GAI-iE-yWu"/>
+                        <color key="backgroundColor" red="0.54901960780000003" green="0.84705882349999995" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="b3x-2f-2cC" firstAttribute="centerY" secondItem="8sU-lq-v1c" secondAttribute="centerY" id="pJc-gQ-Pf2"/>
+                            <constraint firstItem="b3x-2f-2cC" firstAttribute="centerX" secondItem="8sU-lq-v1c" secondAttribute="centerX" id="xVl-c7-bHK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gQn-ar-DxX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j92-y7-1Sc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3269" y="741"/>
+        </scene>
+        <!--曇り-->
+        <scene sceneID="OLA-Q3-WpL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6kS-P8-DNJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="曇り" image="cloud.fill" catalog="system" id="eFG-hc-l0Z"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ASZ-gd-ggf">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4aV-QF-63H" kind="relationship" relationship="rootViewController" id="CBc-Nn-KPW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ffN-cF-3tt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2388" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloud.fill" catalog="system" width="128" height="87"/>
+        <image name="cloud.rain.fill" catalog="system" width="126" height="128"/>
+        <image name="sun.min.fill" catalog="system" width="128" height="123"/>
+    </resources>
+</document>
